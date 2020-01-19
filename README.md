@@ -6,7 +6,7 @@ When I can't use Ubuntu (such as when I'm at work using macOS or when I'm on my 
 
 Anyway, the point here being that having set up a whopping 2 VPS for myself now, I find that the more 'silly' stuff that I love about using UNIX-like setups is kind of tiresome to set up every time I reinstall Windows or spin up a new VPS or have to wipe my work machine or something. 
 
-And like any Real Programmer^TM like I totally am, a repetitive task such as this needs to be implemented with a script, rather than having me do it all over again. 
+And like any Real Programmer™ like I totally am, a repetitive task such as this needs to be implemented with a script, rather than having me do it all over again. 
 
 So this started off as the briliant thought of "OK so I should totally have my fish_config stuff on github so I can just download it to wherever I am instead of manually transferring it from one computer to another" and then turned into "well yeah so what if I just had a script I could run from github that did all of the setup for me" and, so, here I am writing about it. 
 

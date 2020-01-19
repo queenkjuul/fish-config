@@ -1,0 +1,5 @@
+fish
+ruby
+git
+fortune
+fortune-anarchism
