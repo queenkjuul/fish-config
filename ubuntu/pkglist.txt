@@ -1,6 +1,7 @@
 fish
 ruby
 git
+lolcat
 fortune
 fortune-anarchism
 ufw

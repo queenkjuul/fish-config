@@ -26,7 +26,7 @@ sudo apt-get -y upgrade
 xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
 sudo gem install cowsay
 sudo cp -u fish-config/signbunny.rb $(dirname $(gem which cowsay))/cowsay/character/
-cp -ur fish-config/ubuntu/fish/ ~/.config/
+cp -ur fish-config/ubuntu/fish ~/.config/
 #chsh -s /usr/bin/fish
 sudo chsh -s /usr/bin/fish $(whoami)
 
