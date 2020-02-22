@@ -19,6 +19,7 @@ packagelist=fish-config/ubuntu/pkglist.txt
 
 sudo apt-get update
 sudo apt-get -y upgrade
+sudo apt-get -y install git
 git clone https://github.com/queenkjuul/fish-config
 # this is magic from stackexchange
 xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
