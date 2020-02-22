@@ -3,3 +3,4 @@ ruby
 git
 fortune
 fortune-anarchism
+ufw
