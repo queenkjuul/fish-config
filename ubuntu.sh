@@ -15,8 +15,20 @@
 
 # live long and prosper, loves
 
+packagelist=fish-config/ubuntu/pkglist.txt 
+
 sudo apt-get update
 sudo apt-get -y install git
 git clone https://github.com/queenkjuul/fish-config
-chmod +x fish-config/ubuntu/setup.sh 
-bash fish-config/ubuntu/setup.sh
+sudo apt-mark hold grub-pc
+sudo apt-get -y upgrade
+# this is magic from stackexchange
+xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
+sudo gem install cowsay
+sudo cp -u fish-config/signbunny.rb $(dirname $(gem which cowsay))/cowsay/character/
+cp -ur fish-config/ubuntu/fish/ ~/.config/
+#chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish $(whoami)
+
+# TODO: incorporate this magical dotfiles workflow from
+# https://news.ycombinator.com/item?id=11071754
