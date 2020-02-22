@@ -4,7 +4,7 @@
 
 # so my fish setup isn't super complicated, but I am madly in love with it
 # plus, I sometimes make changes that I post to github
-# but most importantly, I want the little bunny to tell say "trans rights" in rainbow colors
+# but most importantly, I want the little bunny to say "trans rights" in rainbow colors
 
 # the point here is not terribly complicated, but as I do not yet know how to use
 # more complicated vm-setup stuff (ansible, cloud-init, chef, etc) I am just making a 
