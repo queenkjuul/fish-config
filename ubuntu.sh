@@ -28,8 +28,7 @@ sudo gem install cowsay
 sudo cp -u fish-config/signbunny.rb $(dirname $(gem which cowsay))/cowsay/character/
 mkdir -p ~/.config/fish
 cp -ur fish-config/ubuntu/fish/* ~/.config/fish
-
-
+echo "exec /usr/bin/fish" >> ~/.bashrc
 
 # TODO: incorporate this magical dotfiles workflow from
 # https://news.ycombinator.com/item?id=11071754
