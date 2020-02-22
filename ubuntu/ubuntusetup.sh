@@ -15,12 +15,10 @@
 # VARIABLES
 
 ARGA=0
-#change UNATTEND to 1 to disable unattended-upgrades
-UNATTEND=0
 ARGF=1
 ARGV=1
 ARGS=1
-valid="^[a-z_]\([a-z0-9_-]{0,31}|[a-z0-9_-]{0,30}\$)$"
+ARGU=1
 
 # FUNCTIONS
 
@@ -38,6 +36,22 @@ new_suser () {
     gpasswd -a $1 sudo
 }
 
+update_server () {
+    apt-get update
+    apt-get -y upgrade 
+    apt-get -y install $(cat pkglist)
+}
+
+get_sshcode () {
+    echo "Not yet configured for VSCode"
+}
+
+push_fish () {
+    # install gems (cowsay)
+    # install signbunny.rb
+    # install fish config files
+    gem install cowsay
+}
 # EXECUTION
 
 # check for root, as we need it
@@ -124,4 +138,5 @@ if [ $ARGA ]; then
         esac
     done
 fi
+
 

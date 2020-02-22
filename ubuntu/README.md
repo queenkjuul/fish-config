@@ -11,13 +11,12 @@ with OPTIONS being:
 - `-n USERNAME` set up user $USERNAME 
 - `-N USERNAME` set up user $USERNAME and add her to sudo
 - `-u` update the server 
-- `-U` update the server and enable `unattended-upgrades` (overrides `-u`) 
 - `-f` download my fish config files from github and install them, updating bashrc as well, and install prerequisites (also runs `-p`)
 - `-v` install sshcode because the normal VSCode SSH never seems to work for me ¯\\\_(ツ)_/¯
 - `-s` copy my public SSH keys from github to the VPS (and, if `-q`, also copy them to my qkj user)
 - `-p` install my custom list of packages (forced with `-f`)
-- `-a USERNAME` all of the above, nosudo (`-nUfvsp USERNAME`)
-- `-A USERNAME` all of the above, sudo (`-NUfbsp USERNAME`)
+- `-a USERNAME` all of the above, nosudo (`-nufvsp USERNAME`)
+- `-A USERNAME` all of the above, sudo (`-Nufbsp USERNAME`)
 - `-n` and `-N` can be used together, and multiple times, for example:
     `-n USER1 -N USER2 -n USER3`
     will create non-sudo users USER1 and USER3, plus sudo user USER2
