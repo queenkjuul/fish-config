@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt-get -y upgrade
 # this is magic from stackexchange
 xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
 sudo gem install cowsay
