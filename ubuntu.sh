@@ -15,10 +15,7 @@
 
 # live long and prosper, loves
 
-packagelist=fish-config/ubuntu/pkglist.txt
-
 sudo apt-get update
-
 sudo apt-get -y install git
 git clone https://github.com/queenkjuul/fish-config
 chmod +x fish-config/ubuntu/setup.sh 

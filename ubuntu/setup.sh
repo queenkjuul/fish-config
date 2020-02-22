@@ -1,5 +1,6 @@
 #!/bin/bash
 
+packagelist=fish-config/ubuntu/pkglist.txt
 sudo apt-get -y upgrade
 # this is magic from stackexchange
 xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
