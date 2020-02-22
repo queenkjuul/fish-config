@@ -19,10 +19,10 @@ packagelist=fish-config/ubuntu/pkglist.txt
 
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo gem install cowsay
 git clone https://github.com/queenkjuul/fish-config
 # this is magic from stackexchange
 xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
+sudo gem install cowsay
 sudo cp -u fish-config/signbunny.rb $(dirname $(dirname $(which cowsay)))/gems/cowsay*/lib/cowsay/character/
 cp -ur fish-config/ubuntu/fish/ ~/.config/
 chsh -s /usr/bin/fish
