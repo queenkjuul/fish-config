@@ -6,9 +6,9 @@ sudo apt-get -y upgrade
 # this is magic from stackexchange
 xargs -a <(awk '! /^ *(#|$)/' "$packagelist") -r -- sudo apt-get -y install
 sudo gem install cowsay
-sudo cp -u fish-config/signbunny.rb $(dirname $(dirname $(which cowsay)))/gems/cowsay*/lib/cowsay/character/
+sudo cp -u fish-config/signbunny.rb $(dirname $(gem which cowsay))/cowsay/character/
 cp -ur fish-config/ubuntu/fish/ ~/.config/
-chsh -s /usr/bin/fish
+#chsh -s /usr/bin/fish
 
 
 
