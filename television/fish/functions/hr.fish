@@ -4,5 +4,5 @@ function hr
   else 
     set char "$argv[1]"
   end
-  printf %(tput cols)s | tr ' ' "$char"
+  printf %(tput cols)s\n | tr ' ' "$char"
 end
